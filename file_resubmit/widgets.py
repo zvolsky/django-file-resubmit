@@ -5,7 +5,7 @@ import uuid
 from django import forms
 from django.forms.widgets import FILE_INPUT_CONTRADICTION
 from django.conf import settings
-from django.forms import ClearableFileInput
+from db_file_storage.form_widgets import DBAdminClearableFileInput as ClearableFileInput  # from django.forms import ClearableFileInput
 from django.utils.safestring import mark_safe
 
 from .cache import FileCache

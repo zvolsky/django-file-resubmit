@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
-from django.forms import ClearableFileInput
+from db_file_storage.form_widgets import DBAdminClearableFileInput as ClearableFileInput  # from django.forms import ClearableFileInput
 from django.utils.safestring import mark_safe
 
 try:
